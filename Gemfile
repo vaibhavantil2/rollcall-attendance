@@ -19,7 +19,7 @@ source 'https://rubygems.org'
 
 gem 'bundler', '>= 1.7.10'
 
-gem 'rails', '~> 5.2.6'
+gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 gem 'rack', '~> 2.1'
 gem 'bootsnap', '~> 1.0', require: false
 
@@ -41,35 +41,35 @@ gem 'resque-retry', '~> 1.0'
 gem 'resque-sentry', '~> 1.0'
 gem 'chronic', '~> 0.10'
 gem 'json', '~> 2.0'
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.4', '>= 2.4.1'
 
 gem 'sentry-raven', '~> 2.0'
 gem 'inst_statsd', '~> 2.1.4'
 gem 'paul_bunyan', '~> 1.5'
 
-gem 'sass-rails', '~> 5.0.0'
+gem 'sass-rails', '~> 5.0.8'
 gem 'coffee-rails', '~> 5.0.0'
 gem 'coffee-script', '2.2.0'
 gem 'mini_racer', '~> 0.2'
 gem 'uglifier', '~> 4.0'
 gem 'jwt', '~> 1.5.4'
 gem 'will_paginate', '~> 3.1.0'
-gem 'react-rails', '~> 1.7'
-gem 'momentjs-rails', '~> 2.11', '>= 2.11.1'
-gem 'font-awesome-rails', '~> 4.7.0'
-gem 'jquery-rails', "~> 4.0"
-gem 'jquery-ui-rails', "~> 6.0"
-gem 'rails-backbone', "~> 0.7.2"
+gem 'react-rails', '~> 1.11', '>= 1.11.0'
+gem 'momentjs-rails', '~> 2.20', '>= 2.20.1'
+gem 'font-awesome-rails', '~> 4.7.0', '>= 4.7.0.7'
+gem 'jquery-rails', '~> 4.4', '>= 4.4.0'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'rails-backbone', '~> 0.7.2'
 
 group :development, :test do
   gem 'byebug'
   gem 'minitest'
   gem 'test-unit'
   gem 'syck'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 5.0.1'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.15.0'
   gem 'phantomjs', '1.9.7.1'
   gem 'guard-jasmine', '~> 2.0'
   # We can relax this brakeman dependency after we have deployed a hybrid
@@ -80,7 +80,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '>= 2.3.0', require: false
   gem 'database_cleaner'
   gem 'shoulda'
   gem 'webmock'
@@ -92,11 +92,11 @@ group :test do
   # upgrade
   gem 'capybara-webkit', '1.15.1'
   gem 'capybara-screenshot'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.1.0'
   gem 'guard-rspec'
   gem 'simplecov', require: false
   gem 'sprockets-helpers', require: false
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.5'
 end
 
 group :postgres do
