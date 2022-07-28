@@ -19,7 +19,7 @@ source 'https://rubygems.org'
 
 gem 'bundler', '>= 1.7.10'
 
-gem 'rails', '~> 5.2.6'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'rack', '~> 2.1'
 gem 'bootsnap', '~> 1.0', require: false
 
@@ -44,7 +44,7 @@ gem 'json', '~> 2.0'
 gem 'responders', '~> 2.0'
 
 gem 'sentry-raven', '~> 2.0'
-gem 'inst_statsd', '~> 2.1.4'
+gem 'inst_statsd', '~> 2.1.7'
 gem 'paul_bunyan', '~> 1.5'
 
 gem 'sass-rails', '~> 5.0.0'
